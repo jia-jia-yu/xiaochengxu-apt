@@ -1,0 +1,88 @@
+/* pages/my/my.wxss */
+@import "../../icons/iconfont.wxss";
+
+.qc{clear: both}
+.not{
+  width: 100%;
+  height: 400rpx;
+  overflow: hidden;
+}
+button::after{border: none;}
+.not .dis{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.not .dis .img{
+  width: 100%;
+  height: 100%;
+  filter: blur(15px);
+}
+.not button{
+  margin-top: 100rpx;
+  width: 400rpx;
+  height:100rpx ;
+  background-color: #fff;
+  border:2rpx solid #FC314F ;
+  color:#FC314F;
+  font-weight: bold;
+}
+
+.not .touxiang{
+  position: absolute;
+  top: 50rpx;
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+.not .userName{
+  position: absolute;
+  top: 220rpx;
+  font-size: 35rpx;
+  text-align: center;
+  color: white;
+}
+
+.wai{
+  padding: 20rpx 0;
+  background-color: #F9F9F9;
+}
+.nav{
+  background-color: #fff;
+  width: 100%;
+  height: 130rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav .mNav{
+  text-align: center;
+  color: #5F6468;
+}
+.nav .mNav view{
+  font-size: 50rpx;
+}
+.nav .mNav p{
+  font-size: 28rpx;
+  font-weight: bold;
+}
+
+.maxBot .min{
+  border-bottom: 2rpx solid #CACACA;
+  height: 100rpx;
+  font-size: 28rpx;
+  padding-left: 40rpx;
+  line-height: 100rpx;
+  color: #5F6468;
+}
+.maxBot .min i{
+  font-size: 40rpx;
+  margin-right: 25rpx;
+}
+.maxBot .min .last{
+  float: right;
+  margin-right: 40rpx;
+}

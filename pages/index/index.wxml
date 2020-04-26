@@ -1,0 +1,26 @@
+<view class="top">
+  <input type="text" maxlength="10" placeholder="搜索"></input>
+</view>
+<view>
+  <swiper class="swi" autoplay="true" indicator-dots="true" circular="true" interval="2000">
+    <block wx:for="{{img}}">
+      <swiper-item>
+        <image src="{{item}}"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class="nav">
+  <navigator class="nav1" wx:for="{{catItems}}" url="pages/index/index">
+      <!-- <view> -->
+        <image src="{{item.icon}}"></image>
+      <!-- </view> -->
+  </navigator>
+</view>
+<view class="p">时尚服装</view>
+<view class="clothing">
+  <navigator class="nav" wx:for="{{clothing_list}}">
+    <image src="{{item}}"></image>
+  </navigator>
+  <p class="qc"></p>
+</view>

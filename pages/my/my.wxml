@@ -1,0 +1,37 @@
+<!--pages/my/my.wxml-->
+
+<view class="not">
+  <button wx:if="{{!hasUserInfo}}" type="default" open-type="getUserInfo" bindgetuserinfo="getUserInfo">登录</button>
+  <block wx:else>
+    <view class="dis">
+      <image class="img" src="{{userInfo.avatarUrl}}"></image>
+      <image class="touxiang" src="{{userInfo.avatarUrl}}"></image>
+      <view class="userName">{{userInfo.nickName}}</view>
+    </view> 
+  </block>
+</view>
+<view class="wai">
+  <view class="nav">
+    <view wx:for="{{icon}}" class="mNav" wx:key="unique">
+      <view class="iconfont {{item.icon}}"></view>
+      <p>{{item.text}}</p>
+    </view>
+  </view>
+</view>
+<view class="maxBot">
+  <view class="min min1">
+    <i class="iconfont icon-erji"></i>
+    <span>联系客服</span>
+    <span class="last">400-618-4000</span>
+  </view>
+  <view class="min min2">
+    <i class="iconfont icon-xinfeng"></i>
+    <span>意见反馈</span>
+  </view>
+  <view class="min min3">
+    <i class="iconfont icon-jinggao"></i>
+    <span>当前版本</span>
+    <span class="last">v4.1.1</span>
+  </view>
+  <view class="qc"></view>
+</view>
